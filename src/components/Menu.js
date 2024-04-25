@@ -2,19 +2,36 @@ import React, { useState } from 'react';
 import "./Menu.css";
 
 function Menu() {
-    const menuItems = [
+    const assortedPremiums = [
         { id: 1, name: 'Veg Burger', price: 249, image: 'https://www.theawesomegreen.com/wp-content/uploads/2014/09/Beet-Burger.jpg' },
         { id: 2, name: 'Chicken Burger', price: 299, image: 'https://simply-delicious-food.com/wp-content/uploads/2022/06/Grilled-chicken-burgers2.jpg' },
         // Add more menu items as needed
     ];      
 
+    const assortedRegulars = [
+
+    ];
+
+    const milkshakes = [
+
+    ];
+
+    const chillers = [
+
+    ];
+
+    const brews = [
+
+    ];
+
+
     const [orderSummary, setOrderSummary] = useState([]);
     const [totalBill, setTotalBill] = useState(0);
 
-    const handleDropdownChange = (e, menuItem) => {
+    const handleDropdownChange = (e, assortedPremium) => {
         const quantity = parseInt(e.target.value);
         const updatedOrderSummary = [...orderSummary];
-        const existingItemIndex = orderSummary.findIndex(item => item.id === menuItem.id);
+        const existingItemIndex = orderSummary.findIndex(item => item.id === assortedPremium.id);
 
         if (quantity === 0) {
             if (existingItemIndex !== -1) {
@@ -22,10 +39,10 @@ function Menu() {
             }
         } else {
             const updatedItem = {
-                id: menuItem.id,
-                name: menuItem.name,
+                id: assortedPremium.id,
+                name: assortedPremium.name,
                 quantity,
-                total: menuItem.price * quantity
+                total: assortedPremium.price * quantity
             };
 
             if (existingItemIndex !== -1) {
@@ -45,16 +62,16 @@ function Menu() {
             <div className="foodType" id="appetizers">
                 <div className="foodTypeTitle">Appetizer</div>
                 <div className="menucontainer">
-                    {menuItems.map(menuItem => (
-                        <div className="menuBody" key={menuItem.id}>
+                    {assortedPremiums.map(assortedPremium => (
+                        <div className="menuBody" key={assortedPremium.id}>
                             <div className="pics">
-                                <img src={menuItem.image} className="foodpic" alt={menuItem.name} />
+                                <img src={assortedPremium.image} className="foodpic" alt={assortedPremium.name} />
                             </div>
                             <div className="menuContent">
-                                <div className="itemName">{menuItem.name}</div>
-                                <div className="prices">Rs. {menuItem.price}</div>
+                                <div className="itemName">{assortedPremium.name}</div>
+                                <div className="prices">Rs. {assortedPremium.price}</div>
                                 <div className="quantity">
-                                    <select onChange={(e) => handleDropdownChange(e, menuItem)}>
+                                    <select onChange={(e) => handleDropdownChange(e, assortedPremium)}>
                                         <option value="0">0</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>

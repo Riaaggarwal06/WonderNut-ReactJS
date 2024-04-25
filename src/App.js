@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+
 import Footer from './components/Footer';
 import LandingPage from './components/LandingPage';
 import Navbar from './components/Navbar';
@@ -10,6 +11,8 @@ import ReservationPage from './components/ReservationPage';
 import Menu from './components/Menu'; 
 import Feedback from './components/Feedback';
 import Contactus from './components/Contactus';
+
+
 
 
 

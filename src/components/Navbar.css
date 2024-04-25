@@ -16,9 +16,26 @@
   
   .nav-link:hover {
     text-decoration: underline;
+    color:black;
   }
   
   .logo{
     height: 70px;
     width: 120px;
   }
+
+  .wholenavbar{
+    background-color:   #008265;
+    border-radius: 5px;
+  }
+
+  .navbar{
+    border-radius: 10px;
+  }
+
+  .dropdown-item:hover {
+    text-decoration: underline;
+  }
+
+ 
+  
