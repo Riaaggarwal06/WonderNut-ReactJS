@@ -1,0 +1,41 @@
+.reservation {
+    padding-top: 40px;
+  }
+  
+  .reservationPage {
+    background-image: url("https://images2.alphacoders.com/132/1325726.png");
+    background-size: cover;
+    background-position: center;
+    color: antiquewhite;
+  }
+  
+  .reservationPage::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.05);
+    z-index: -1;
+  }
+  
+  .reservationform {
+    font-size: 25px;
+    max-width: 800px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center align the form */
+    padding: 30px; /* Increase padding for a larger box */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 8px; /* Add border radius */
+  }
+  
+  /* Shorten the length of textboxes */
+  .reservationform input[type="text"],
+  .reservationform input[type="number"],
+  .reservationform input[type="date"],
+  .reservationform input[type="time"] {
+    width: calc(100% - 20px); /* Adjust the width of textboxes */
+    margin-bottom: 10px; /* Add some bottom margin */
+  }
+  
+  

@@ -1,0 +1,24 @@
+/* Navbar.css */
+.navbar-nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-nav li {
+    margin-right: 170px; /* Adjust as needed */
+    font-size: 25px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  .logo{
+    height: 70px;
+    width: 120px;
+  }
