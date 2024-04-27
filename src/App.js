@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-
 import Footer from './components/Footer';
 import LandingPage from './components/LandingPage';
 import Navbar from './components/Navbar';
@@ -11,6 +10,9 @@ import ReservationPage from './components/ReservationPage';
 import Menu from './components/Menu'; 
 import Feedback from './components/Feedback';
 import Contactus from './components/Contactus';
+import Aboutus from "./components/Aboutus";
+
+
 
 
 
@@ -26,6 +28,7 @@ function App() {
         <Route path="/menu" element={<Menu />} /> 
         <Route path="/feedback" element={<Feedback />} />
         <Route path="/contactus" element={<Contactus />} />
+        <Route path="/aboutus" element={<Aboutus/>} />
       </Routes>
       <Footer />
     </Router>

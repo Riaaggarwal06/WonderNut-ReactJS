@@ -1,8 +1,8 @@
 footer {
-    margin-top: 30px;
+    /* margin-top: 30px; */
     bottom: 0;
     width: 100%;
-    background-color: #008265;
+    background-color: #F188BE;
     padding: 10px;
     text-align: center;
   }
@@ -49,8 +49,9 @@ footer {
     color: white;
   }
 
-  .vertical-section img{
-
+  .links{
+    display: flex;
+    flex-direction: row;
   }
 
   .textemail{

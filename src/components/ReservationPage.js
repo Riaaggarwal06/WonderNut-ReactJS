@@ -33,9 +33,8 @@ function ReservationPage() {
 
   return (
     <>
-      {/* <Navbar /> */}
       <div className="mt-5 reservation">
-        <h1 className="mb-4 text-center" style={{ fontSize: "50px" }}>Reservation Form</h1>
+        <h1 className="mb-4 text-center" style={{ fontSize: "50px" , textAlign: 'center'}}>Reservation Form</h1>
         <form className="reservationform">
           <div className="mb-3 row">
             <label htmlFor="name" className="col-sm-2 col-form-label">Name</label>
@@ -72,7 +71,7 @@ function ReservationPage() {
             </div>
           </div>
           <div className="mb-3 row">
-            <label htmlFor="numberOfPeople" className="col-sm-2 col-form-label">Number of People</label>
+            <label htmlFor="numberOfPeople" className="col-sm-2 col-form-label" >Number of People</label>
             <div className="col-sm-10">
               <input
                 type="number"
@@ -83,7 +82,7 @@ function ReservationPage() {
             </div>
           </div>
           <div className="text-center">
-            <button type="button" className="btn btn-primary book" style={{ fontSize: "30px" }} onClick={submitForm}>Book</button>
+            <button type="button" className="btn btn-primary book" style={{ fontSize: "30px"}} onClick={submitForm}>Book</button>
           </div>
           <br />
           <p id="errorMessage" className="text-center text-danger"></p>

@@ -1,12 +1,11 @@
-.reservation {
-    padding-top: 40px;
-  }
+
   
   .reservationPage {
-    background-image: url("https://images2.alphacoders.com/132/1325726.png");
+    
     background-size: cover;
     background-position: center;
     color: antiquewhite;
+    
   }
   
   .reservationPage::before {
@@ -21,12 +20,14 @@
   }
   
   .reservationform {
-    font-size: 25px;
+    font-size: 18px;
     max-width: 800px; /* Adjust the maximum width as needed */
     margin: 0 auto; /* Center align the form */
-    padding: 30px; /* Increase padding for a larger box */
+    padding: 20px; /* Increase padding for a larger box */
     border: 1px solid #ccc; /* Add a border */
     border-radius: 8px; /* Add border radius */
+    background-color: #F5F5F5;
+    font-weight: bold;
   }
   
   /* Shorten the length of textboxes */
@@ -34,8 +35,21 @@
   .reservationform input[type="number"],
   .reservationform input[type="date"],
   .reservationform input[type="time"] {
-    width: calc(100% - 20px); /* Adjust the width of textboxes */
-    margin-bottom: 10px; /* Add some bottom margin */
+    width: calc(100% - 30px); /* Adjust the width of textboxes */
+    margin-bottom: 10px; 
+    margin-left: 10px;
   }
   
   
+  .book {
+    background-color: #F188BE;
+    transition: background-color 0.3s ease; /* Adding transition for smooth hover effect */
+  }
+  
+  .book:hover {
+    background-color: #231942;
+  }
+  
+.reservation{
+  padding-bottom: 30px;
+}

@@ -5,8 +5,11 @@
   }
   
   .navbar-nav li {
-    margin-right: 170px; /* Adjust as needed */
+    margin-right: 110px; 
+    margin-left: 80px;
     font-size: 25px;
+    font-weight: bold;
+    align-items: center;
   }
   
   .nav-link {
@@ -25,7 +28,7 @@
   }
 
   .wholenavbar{
-    background-color:   #008265;
+    background-color:   #F188BE;
     border-radius: 5px;
   }
 
@@ -33,9 +36,21 @@
     border-radius: 10px;
   }
 
-  .dropdown-item:hover {
-    text-decoration: underline;
+  .dropdown-menu {
+    background-color: #F188BE;
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Add border-radius */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
   }
-
- 
   
+  .dropdown-item {
+    color: white; /* Text color */
+    padding: 10px 20px; /* Adjust padding */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Add transition for smooth hover effect */
+  }
+  
+  .dropdown-item:hover {
+    background-color: #F188BE; /* Change background color on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    text-decoration: underline; /* Add underline on hover */
+  }

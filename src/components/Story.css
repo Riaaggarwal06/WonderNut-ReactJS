@@ -1,0 +1,17 @@
+.story{
+    margin: 30px 10px;
+    padding: 20px;
+    background-color: #C7B1DB ;
+    
+    
+  }
+  .headOfStory {
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  .storyText{
+    color: rgba(255, 255, 255, 0.84);
+    font-size: 20px;
+  }

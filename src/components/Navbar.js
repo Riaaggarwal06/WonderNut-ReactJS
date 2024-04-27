@@ -18,7 +18,7 @@ function Navbar() {
               <Link className="nav-link active" aria-current="page" to="/" style={{color:'white'}}>Home</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about" style={{color:'white'}}>About Us</Link>
+              <Link className="nav-link" to="/aboutus" style={{color:'white'}}>About Us</Link>
             </li>
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" style={{color:'white'}} href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
