@@ -68,7 +68,7 @@ function Footer() {
           <div className="headings">Our Company</div>
           <div className="vertical-section">
             {/* Replace anchor tag with Link */}
-            <Link to="/about" style={{ color: "white" }}>
+            <Link to="/aboutus" style={{ color: "white" }}>
               About Us
             </Link>
           </div>

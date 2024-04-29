@@ -5,10 +5,6 @@ class Feedback extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: "",
-      gender: "",
-      email: "",
-      mobile: "",
       how_did_you_hear_about_the_brand: "",
       how_often_do_you_buy_from_us: "",
       how_do_you_usually_buy_our_products_instore__delivery: "",
@@ -17,35 +13,47 @@ class Feedback extends React.Component {
       what_do_you_like_most_about_wondernut: "",
       what_new_doughnuts_would_you_like_to_see: "",
       do_you_follow_us_on_facebookinstagram: "",
-      we_would_like_to_make_your_experience_wonderful_do_share_any_other_feedbacksuggestion_that_comes_to_mind:
-        "",
-        submitted: false, 
-        error: false 
-      };
+      we_would_like_to_make_your_experience_wonderful_do_share_any_other_feedbacksuggestion_that_comes_to_mind: "",
+      submitted: false,
+      error: false
+    };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleSubmit(event) {
     event.preventDefault();
 
-    
-    const isEmpty = Object.values(this.state).some(value => value === "");
+    const {
+      how_did_you_hear_about_the_brand,
+      how_often_do_you_buy_from_us,
+      how_do_you_usually_buy_our_products_instore__delivery,
+      for_what_occasion_do_you_buy_from_us,
+      what_offer_from_us_jumps_to_your_mind,
+      what_do_you_like_most_about_wondernut,
+      what_new_doughnuts_would_you_like_to_see,
+      do_you_follow_us_on_facebookinstagram,
+      we_would_like_to_make_your_experience_wonderful_do_share_any_other_feedbacksuggestion_that_comes_to_mind
+    } = this.state;
 
-    if (isEmpty) {
-      
+    if (!how_did_you_hear_about_the_brand ||
+        !how_often_do_you_buy_from_us ||
+        !how_do_you_usually_buy_our_products_instore__delivery ||
+        !for_what_occasion_do_you_buy_from_us ||
+        !what_offer_from_us_jumps_to_your_mind ||
+        !what_do_you_like_most_about_wondernut ||
+        !what_new_doughnuts_would_you_like_to_see ||
+        !do_you_follow_us_on_facebookinstagram ||
+        !we_would_like_to_make_your_experience_wonderful_do_share_any_other_feedbacksuggestion_that_comes_to_mind) {
       this.setState({ error: true });
       return;
     }
 
-   
     this.setState({ error: false, submitted: true });
 
-    
     console.log("Form submitted:", this.state);
 
     alert("Feedback submitted successfully!");
   }
-
 
   render() {
     return (
