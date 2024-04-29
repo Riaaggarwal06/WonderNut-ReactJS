@@ -12,12 +12,6 @@ import Feedback from './components/Feedback';
 import Contactus from './components/Contactus';
 import Aboutus from "./components/Aboutus";
 
-
-
-
-
-
-
 function App() {
   return (
     <Router>

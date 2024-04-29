@@ -1,5 +1,7 @@
 import './DelicateDelicacies.css'
 import { Link } from 'react-router-dom';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
 
 import React from 'react';
 
@@ -14,7 +16,7 @@ function DelicateDelicacies() {
               <span className="menu">Delicacies</span>
             </div>
           </h3>
-          <p className="description">Taste the best of our elaborate spread that has been our customer’s favorite made with
+          <p className="description">Taste the best of our elaborate spread that has been our customer's favorite made with
             only the best and the freshest ingredients.</p>
           <p className="description">Click on the dish to order.</p>
         </div>
